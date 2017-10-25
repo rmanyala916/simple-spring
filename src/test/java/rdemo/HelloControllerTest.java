@@ -14,7 +14,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import com.hpe.alm.octane.OctaneCucumber;
+import cucumber.api.CucumberOptions;
 
+@RunWith(OctaneCucumber.class)
+@CucumberOptions(plugin={"junit:junitResult.xml"},
+    features="src/test/java/rdemo")
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -30,3 +34,4 @@ public class HelloControllerTest {
                 .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
     }
 }
+
