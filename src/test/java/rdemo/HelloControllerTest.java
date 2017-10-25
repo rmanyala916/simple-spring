@@ -16,9 +16,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import com.hpe.alm.octane.OctaneCucumber;
 import cucumber.api.CucumberOptions;
 
-@RunWith(OctaneCucumber.class)
-@CucumberOptions(plugin={"junit:junitResult.xml"})
-//@RunWith(SpringRunner.class)
+//@RunWith(OctaneCucumber.class)
+//@CucumberOptions(plugin={"junit:junitResult.xml"})
+@RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
 public class HelloControllerTest {
