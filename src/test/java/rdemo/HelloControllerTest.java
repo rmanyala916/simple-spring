@@ -19,8 +19,8 @@ import cucumber.api.CucumberOptions;
 @RunWith(OctaneCucumber.class)
 @CucumberOptions(plugin={"junit:junitResult.xml"},
     features="src/test/java/rdemo")
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 @AutoConfigureMockMvc
 public class HelloControllerTest {
 
