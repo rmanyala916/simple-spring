@@ -1,3 +1,5 @@
+#Auto generated Octane revision tag
+@TID18104REV0.1.0
 Feature: Proof of concept that my framework works
 
   Scenario: My first test
